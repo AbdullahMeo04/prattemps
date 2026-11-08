@@ -6,7 +6,8 @@ L'aplicació permet commutar àgilment entre municipis a través d'una llista de
 
 ## Captura de pantalla
 
-![Captura](docs/screenshot.png)
+<img width="937" height="840" alt="image" src="https://github.com/user-attachments/assets/722cd769-6891-4b5d-9cbd-4e7d8db20afa" />
+
 
 ## Com executar el projecte
 

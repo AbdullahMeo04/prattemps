@@ -1,0 +1,52 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--fons);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1.5rem;
+}
+
+.contingut {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.capcaleraPrincipal {
+  margin-bottom: 2rem;
+}
+
+.titolApp {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.subtitolApp {
+  font-size: 1.15rem;
+  color: var(--text-suau);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 720px) {
+  .app {
+    padding: 1.5rem 1rem;
+    overflow-x: hidden;
+  }
+
+  .contingut {
+    max-width: 100%;
+  }
+
+  .titolApp {
+    font-size: 2.15rem;
+  }
+
+  .subtitolApp {
+    font-size: 1rem;
+  }
+}

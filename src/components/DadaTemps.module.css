@@ -1,0 +1,40 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1.1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--vora);
+}
+
+.icona {
+  font-size: 1.85rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primari-suau);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.contingut {
+  display: flex;
+  flex-direction: column;
+}
+
+.etiqueta {
+  font-size: 0.875rem;
+  color: var(--text-suau);
+  font-weight: 600;
+}
+
+.valor {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 0.1rem;
+}

@@ -1,0 +1,50 @@
+.contenidor {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.boto {
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid var(--vora);
+  background-color: #ffffff;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  white-space: nowrap;
+}
+
+.boto:hover {
+  border-color: var(--primari);
+  color: var(--primari);
+}
+
+.boto.actiu {
+  background-color: var(--primari);
+  color: #ffffff;
+  border-color: var(--primari);
+  box-shadow: 0 2px 8px rgba(31, 111, 234, 0.25);
+}
+
+@media (max-width: 720px) {
+  .contenidor {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+  }
+
+  .fila {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+}

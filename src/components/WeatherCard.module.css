@@ -1,0 +1,155 @@
+.targeta {
+  background-color: var(--targeta);
+  border: 1px solid var(--vora);
+  border-radius: 24px;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  box-shadow: 0 8px 30px rgba(15, 35, 60, 0.05);
+}
+
+.columnaPrincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.capcalera {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.titolCiutat {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.pais {
+  color: var(--text-suau);
+  font-weight: 600;
+}
+
+.horaActualitzacio {
+  font-size: 0.95rem;
+  color: var(--text-suau);
+  font-weight: 600;
+}
+
+.resumClima {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconaTemps {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.08));
+}
+
+.blocTemperatura {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.temperatura {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+}
+
+.descripcio {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.maxMin {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-suau);
+  margin-top: 0.25rem;
+}
+
+.columnaDades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Estats */
+.targetaEstat {
+  background-color: var(--targeta);
+  border: 1px solid var(--vora);
+  border-radius: 24px;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.carregantText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-suau);
+}
+
+.errorBox {
+  background-color: var(--error-fons);
+  border: 1px solid var(--error);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  color: var(--error);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.avisClau {
+  background-color: var(--error-fons);
+  border: 1px solid var(--error);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  color: var(--error);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Adaptació a pantalles petites (fins a 720px) segons Figura 2 */
+@media (max-width: 720px) {
+  .targeta {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.75rem;
+    border-radius: 18px;
+  }
+
+  .titolCiutat {
+    font-size: 1.85rem;
+  }
+
+  .resumClima {
+    gap: 1rem;
+  }
+
+  .iconaTemps {
+    width: 90px;
+    height: 90px;
+  }
+
+  .temperatura {
+    font-size: 2.75rem;
+  }
+
+  .columnaDades {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+}
